@@ -1,0 +1,1 @@
+//samma komponent med olika innehåll
