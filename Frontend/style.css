@@ -1,0 +1,25 @@
+body {
+    font-family: 'Poppins';font-size: 22px;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  .hero-content {
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  .home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
