@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <title>TSushi</title>
 
-  <!-- Vue & Router från CDN -->
+  <!-- Vue & Router-->
   <script src="https://unpkg.com/vue@3.4.21/dist/vue.global.js" defer></script>
   <script src="https://unpkg.com/vue-router@4.1.6/dist/vue-router.global.js" defer></script>
-  <script src="./app.js" defer></script>
+  
+  <!-- app.js som modul -->
+  <script type="module" src="./app.js" defer></script>
 
   <!-- Styling -->
   <link rel="stylesheet" href="./style.css">
@@ -15,6 +17,7 @@
 </head>
 
 <body>
+    <!-- app -->
   <div id="app"></div>
 </body>
 </html>

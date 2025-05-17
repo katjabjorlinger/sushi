@@ -1,18 +1,22 @@
 // router.js
-import { createRouter, createWebHashHistory } from "vue-router";
-import Home from "./components/home.js";
-import Menu from "./components/menu.js";
+const { createRouter, createWebHashHistory } = VueRouter;
 
+import home from "./components/home.js";
+import menu from "./components/menu.js";
+import booking from "./components/booking.js";
 
+// Definierar router
 const routes = [
-  { path: "/", name: "home", component: Home },
-  { path: "/menu", name: "menu", component: Menu },
-  { path: "/booking", name: "booking", }
+  { path: "/", component: home },
+  { path: "/menu", component: menu },
+  { path: "/booking", component: booking },
 ];
 
+// Skapa router
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
 });
 
+// Exporterar router som global variabel
 export default router;

@@ -1,5 +1,11 @@
+import Navigation from "./navigation.js"
+
 export default{
-    name: 'menu',
+    name: 'Menu',
+    components: {
+        Navigation,}
+    ,
+
     template: `
     <Navigation />
     `
