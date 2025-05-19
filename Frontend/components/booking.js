@@ -26,7 +26,7 @@ export default {
           <form @submit.prevent="fetchAvailableTimes" class="row g-3 align-items-end">
              <div class="col-md-4">
               <label for="date" class="form-label">Date</label>
-              <input type="date" v-model="date" :min="date" class="form-control bg-body-secondary" required/>
+              <input type="date" v-model="date" :min="today" class="form-control bg-body-secondary" required/>
              </div>
 
             <div class="col-md-4">
@@ -178,8 +178,10 @@ export default {
       <Footer/>
   `,
   data() {
+    const today = new Date().toISOString().split("T")[0];
     return {
-      date: new Date().toISOString().split("T")[0],
+      date: today,
+      today: today,
       guests: '',
       times: [],
       searched: false,
