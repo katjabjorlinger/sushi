@@ -6,7 +6,7 @@ export default {
         <div class="container">
           <div class="row text-center text-md-start">
             <div class="col-md-4 mb-4">
-              <h5 class="text-uppercase fw-bold">TSushi Stockholm </h5>
+              <h5 class="text-uppercase fw-bold">Omakase Stockholm </h5>
               <p> Drottninggatan 12 <br />111 51 Stockholm</p>
               <p>08-123 45 678</p>
               <p> Öppet: Mån-Sön 11:00 - 22:00</p>
@@ -33,7 +33,7 @@ export default {
 
 
 
-        <p>&copy; 2025 TSushi. All rights reserved.</p>
+        <p>&copy; 2025 Omakase. All rights reserved.</p>
       </footer>
     `,
   };
