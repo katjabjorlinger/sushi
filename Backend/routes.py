@@ -51,3 +51,8 @@ def get_available():
     
     except Exception as e:
         return jsonify({"error": str(e)}), 400
+    
+@routes.route('/api/menu', methods=['GET'])
+def get_menu():
+    response = supabase.table('menu').select('*').execute()
+    return jsonify(response.data)

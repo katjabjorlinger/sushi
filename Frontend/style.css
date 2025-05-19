@@ -1,5 +1,9 @@
 body {
-    font-family: 'Poppins';font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  color:black;
 }
 
 .hero {
@@ -16,6 +20,7 @@ body {
   .hero-content {
     padding: 2rem;
     border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.226);
   }
   .home-container {
     max-width: 1200px;
@@ -31,3 +36,70 @@ body {
     font-size: 1rem;
     color: #333;
   }
+
+.menu-section{
+  max-width: 80%;
+  align-content: center;
+}
+
+
+/* Sektionstitel */
+.menu-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Grid för menyposter: två kolumner */
+.menu-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 4rem;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+}
+
+/* Varje meny-post */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Detaljer (namn + beskrivning) */
+.item-details {
+  max-width: calc(100% - 80px); 
+}
+
+/* Maträttens namn */
+.item-name {
+  margin: 0 0 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+/* Beskrivning */
+.item-desc {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Pris */
+.item-price {
+  width: 80px;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Responsivt: en kolumn på smalare skärmar */
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

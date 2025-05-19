@@ -10,11 +10,11 @@ export default {
         <Navigation />
         <main>
             <Hero 
-            title="Welcome to TSushi" 
+            title="Welcome to Omakase" 
             subtitle="Delicious sushi and an unforgettable experience." 
             background="../assets/sushi.jpeg"
             />
-        <section class="about">
+        <section class="about container my-5">
             <h2 class="section-title">A DESTINATION</h2>
             <p class="section-text">
             Present commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
