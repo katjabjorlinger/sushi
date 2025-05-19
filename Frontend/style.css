@@ -20,13 +20,35 @@ body {
   .hero-content {
     padding: 2rem;
     border-radius: 8px;
-    /* background-color: rgba(0, 0, 0, 0.226); */
+/*     background-color: rgba(0, 0, 0, 0.5); */
   }
   .home-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
   }
+
+  /* Hero-knapp: vit tunn ram, rundade hörn, transparent bakgrund */
+.hero-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover – vit bakgrund, mörk text */
+.hero-btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
   
   .card-title {
     font-weight: 700;
@@ -42,6 +64,30 @@ body {
   align-content: center;
 }
 
+.about-section{
+  background-color: #fff;
+  padding: 4rem 0;
+}
+.section-title {
+  font-size: 2.5rem;           
+  font-weight: 700;            
+  text-align: center;          
+  margin: 4rem 0 1.5rem;       
+  text-transform: uppercase;   
+  letter-spacing: 1px;         
+  color: #000; 
+}
+
+.section-text{
+  text-align: center;
+  max-width: 800px;            
+  margin: 0 auto 3rem;          
+  font-size: 1rem;             
+  line-height: 1.6;             
+  text-align: center;          
+  color: #555;                
+  padding: 0 1rem;
+}
 
 /* Sektionstitel */
 .menu-title {
@@ -51,6 +97,73 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
+.feature-img {
+  width: 100%;
+  height: 300px;         
+  object-fit: cover;     
+  display: block;       
+  border-radius: 4px; 
+  padding-bottom: 1rem;   
+}
+
+.kitchen-hero {
+  position: relative;
+  background-image: url('../assets/chef.jpg'); 
+  background-size: cover;
+  background-position: top;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mörk overlay för bra kontrast */
+.kitchen-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Titeltext */
+.kitchen-title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/* Kontejner runt namn och roller */
+.kitchen-section {
+  background-color: #fff;
+  padding-bottom: 4rem;
+}
+
+/* Chef-profiler */
+.kitchen-section h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.kitchen-section p {
+  margin-bottom: 1rem;
+}
+
+/* Responsivt: justera hero på små skärmar */
+@media (max-width: 576px) {
+  .kitchen-hero {
+    height: 40vh;
+  }
+  .kitchen-title {
+    font-size: 2rem;
+  }
+}
+
 
 /* Grid för menyposter: två kolumner */
 .menu-grid {
@@ -157,7 +270,7 @@ body {
 /* Gör brand-texten tydligare */
 .navbar-dark .navbar-brand h1 {
   color: #fff !important;
- /*  font-weight: 800;   */             /* extra bold för logon */
-  letter-spacing: 1px;            /* ger lite luft mellan bokstäverna */
-  font-size: 1.75rem;             /* större logotyp om du vill */
+ /*  font-weight: 800;   */            
+  letter-spacing: 1px;            
+  font-size: 1.75rem;             
 }

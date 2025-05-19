@@ -1,12 +1,14 @@
 // Menu.js - Vue Component for TSushi
 import Navigation from "./navigation.js";
 import Hero from "./hero.js";
+import Footer from "./footer.js";
 
 export default {
   name: 'Menu',
   components: {
     Navigation,
-    Hero
+    Hero, 
+    Footer
   },
   data() {
     return {
@@ -70,5 +72,6 @@ export default {
         </div>
       </section>
     </div>
+    <Footer />
   `
 };
