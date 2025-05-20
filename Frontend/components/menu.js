@@ -35,7 +35,7 @@ export default {
       <Hero 
             title="Menu" 
             subtitle="This mission is simple: serve delicious, affordable food that guests will want to return to week after week." 
-            background="../assets/people.jpeg"
+            background="../assets/menuhero.jpeg"
             />
       <section class="menu-section container my-5">
         <h2 class="menu-title">APPETIZERS</h2>
